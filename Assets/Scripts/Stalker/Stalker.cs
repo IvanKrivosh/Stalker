@@ -26,9 +26,9 @@ public class Stalker : MonoBehaviour
         if (distance > _minDistance)
         {
             Vector3 direction = (_target.transform.position - transform.position).normalized;
-            Vector3 stalkerSpeed = new Vector3(direction.x * _speed, _rigidbody.velocity.y, direction.z * _speed);
+            Vector3 speed = new Vector3(direction.x * _speed, _rigidbody.velocity.y, direction.z * _speed);
 
-            _rigidbody.velocity = stalkerSpeed;
+            _rigidbody.velocity = speed;
         }           
     }
 

@@ -11,7 +11,7 @@ public class PlayerInputHandler : MonoBehaviour
     private InputPlayer _inputPlayer;
     private Vector3 _moveDirection;
 
-    void Awake()
+    private void Awake()
     {
         _inputPlayer = new InputPlayer();
 
